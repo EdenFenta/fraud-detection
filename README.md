@@ -23,7 +23,9 @@ The following features were engineered:
 ## Class Imbalance
 Due to extreme class imbalance, accuracy is not an appropriate evaluation metric. Future modeling will rely on F1-score and Precision-Recall AUC, with resampling techniques applied only to training data.
 
-## Next Steps
-- Train baseline and ensemble models
-- Evaluate performance using imbalanced classification metrics
-- Interpret predictions using SHAP
+## Modeling and Evaluation
+Two models were trained:
+- Logistic Regression as an interpretable baseline
+- Random Forest as an ensemble model
+
+Due to severe class imbalance, models were evaluated using F1-score and Precision-Recall AUC. Random Forest achieved superior performance, capturing non-linear fraud patterns more effectively.
